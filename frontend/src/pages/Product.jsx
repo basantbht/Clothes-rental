@@ -74,7 +74,22 @@ const Product = () => {
             </div>
           </div>
 
-          <button onClick={()=>addToCart(productData._id,size)} className='bg-black text-white px-10 py-4 text-sm active:bg-gray-700'>ADD TO CART</button>
+
+          {/* date of rent product */}
+
+          <div className='w-20 border-solid flex mt-2 mb-5'>
+            <div>
+              <p>Start Date</p>
+              <input type="date" className='w-25 border-gray-400 border p-1 mr-2' />
+            </div>
+            <div>
+              <p>End Date</p>
+              <input type="date" className='w-25 border-gray-400 border p-1 mr-2' />
+            </div>
+          </div>
+
+          <button onClick={() => addToCart(productData._id, size)} className='bg-black text-white px-10 py-4 text-sm active:bg-gray-700'>ADD TO CART</button>
+          
           <hr className='mt-8 sm:w-4/5' />
           <div className='text-sm text-gray-500 mt-5 flex flex-col gap-1'>
             <p>Original Product</p>
